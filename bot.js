@@ -56,7 +56,7 @@ async function connectBot() {
                 const isAdmin = participante?.admin !== null && participante?.admin !== undefined
 
                 // checar se é o número fixo
-                const isNumeroFixo = sender.includes("556184381185") // Brasil = 55 + DDD 61 + número
+                const isNumeroFixo = sender.includes("Seu Número aqui") // Brasil = 55 + DDD 61 + número
 
                 if (isAdmin || isNumeroFixo) {
                     await sock.sendMessage(from, {
